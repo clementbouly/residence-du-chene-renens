@@ -1,0 +1,107 @@
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+.card {
+  background: var(--surface-subtle);
+  border-radius: 13px;
+  margin-top: 10px;
+  padding: 18px;
+}
+
+.emergency {
+  background: var(--soft-orange);
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  margin: 1px 0 10px;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 16px 0 8px;
+}
+
+.card h2:first-of-type {
+  margin-top: 0;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+}
+
+.action {
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  color: var(--ink);
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 11px;
+  min-height: 48px;
+  padding: 0 14px;
+  text-align: left;
+  text-decoration: none;
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 120ms ease;
+  width: 100%;
+}
+
+.action:hover {
+  border-color: #b9c7b8;
+  box-shadow: 0 2px 8px rgb(23 37 28 / 7%);
+}
+
+.action:active {
+  transform: scale(0.985);
+}
+
+.action svg {
+  color: var(--green);
+  flex: 0 0 auto;
+}
+
+.action span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action small {
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.hours {
+  color: var(--muted);
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 10px;
+  margin: 16px 0 0;
+  text-align: center;
+}

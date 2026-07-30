@@ -1,0 +1,262 @@
+.tracker {
+  width: 100%;
+}
+
+.toolbar {
+  background: var(--background);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto minmax(0, 1fr);
+  margin: -12px -8px 0;
+  padding: 12px 8px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.heading {
+  align-items: end;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 42px 2px 18px;
+}
+
+.heading h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 5vw, 39px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: -2px 0 14px;
+  overflow-x: auto;
+  padding: 2px;
+  scrollbar-width: none;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #556158;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 9px 0 13px;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 120ms ease;
+}
+
+.filter b {
+  align-items: center;
+  background: var(--surface-subtle);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 750;
+  height: 21px;
+  justify-content: center;
+  min-width: 21px;
+  padding: 0 6px;
+}
+
+.filter:hover {
+  border-color: #b9c7b8;
+  color: var(--green);
+}
+
+.filter:active {
+  transform: scale(0.96);
+}
+
+.filterSelected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.filterActive.filterSelected {
+  background: #a54d29;
+  border-color: #a54d29;
+}
+
+.filterActive:not(.filterSelected):hover {
+  border-color: #cf9b82;
+  color: #a54d29;
+}
+
+.filterResolved.filterSelected {
+  background: #26733f;
+  border-color: #26733f;
+}
+
+.filterSelected b {
+  background: rgb(255 255 255 / 18%);
+  color: #fff;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgb(23 37 28 / 3%);
+  overflow: hidden;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.card:hover {
+  border-color: #c7d1c5;
+  box-shadow: 0 8px 24px rgb(23 66 44 / 7%);
+  transform: translateY(-1px);
+}
+
+.trigger {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr auto 24px;
+  min-height: 74px;
+  padding: 13px 18px;
+  text-align: left;
+  width: 100%;
+}
+
+.trigger:active {
+  background: var(--surface-muted);
+}
+
+.content {
+  min-width: 0;
+}
+
+.meta {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+.category {
+  color: var(--green);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.trigger strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-top: 7px;
+}
+
+.count {
+  background: var(--surface-muted);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  min-width: 58px;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.count b {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.count small {
+  color: var(--muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.symbol {
+  align-items: center;
+  color: #718078;
+  display: flex;
+  justify-content: center;
+  transition: transform 180ms ease;
+}
+
+.card:hover .symbol {
+  color: var(--green);
+  transform: translateX(2px);
+}
+
+.empty {
+  border: 1px dashed #bdc7ba;
+  border-radius: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.empty strong {
+  color: var(--ink);
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.empty p {
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    grid-template-columns: 50px minmax(0, 1fr);
+    margin: -6px -4px 0;
+    padding: 8px 4px;
+  }
+
+  .heading {
+    align-items: start;
+    padding: 30px 2px 14px;
+  }
+
+  .trigger {
+    gap: 9px;
+    grid-template-columns: minmax(0, 1fr) auto 22px;
+    min-height: 72px;
+    padding: 13px;
+  }
+
+  .count {
+    min-width: 48px;
+    padding-left: 10px;
+  }
+}

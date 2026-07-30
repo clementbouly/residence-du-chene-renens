@@ -1,0 +1,976 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-07-30T21:51:17.398Z",
+  "firebaseProjectId": "qui-choisit",
+  "collections": {
+    "residence_issue_reports": [
+      {
+        "id": "02b62598-3174-4610-bc39-7ba922674193",
+        "apartmentHash": null,
+        "building": "26",
+        "issueId": "chauffage-sol-anormal",
+        "createdAt": "2026-07-30T19:30:20.674Z"
+      },
+      {
+        "id": "05cc4b39662d072b2798f2003101496200a8bf3403bec521e2fb06acccceb658",
+        "issueId": "eau-chaude-coupure-soir",
+        "apartmentHash": "05cc4b39662d072b2798f2003101496200a8bf3403bec521e2fb06acccceb658",
+        "createdAt": "2026-07-30T19:56:50.843Z",
+        "building": "24"
+      },
+      {
+        "id": "09c6df0e-f88f-4429-b63d-41f055ec5b5b",
+        "createdAt": "2026-07-30T20:05:17.234Z",
+        "apartmentHash": null,
+        "issueId": "parking-entrees-inacheves",
+        "building": "26"
+      },
+      {
+        "id": "0cea4f9d-8d04-4cfb-bc45-caae62aa7974",
+        "issueId": "vmc-pannes",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:26:04.423Z",
+        "building": "20"
+      },
+      {
+        "id": "16047c00-efcc-40cc-8934-5007190850e4",
+        "apartmentHash": null,
+        "building": "28",
+        "issueId": "absence-bennes-compost",
+        "createdAt": "2026-07-30T20:48:28.110Z"
+      },
+      {
+        "id": "18c2efc3-7b6d-4d27-b208-365c2a85099b",
+        "issueId": "absence-bennes-compost",
+        "building": "24",
+        "createdAt": "2026-07-30T19:36:57.424Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "1923f965-a5b9-4d85-a4ba-db5079ff3dc9",
+        "building": "24",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:00:50.525Z"
+      },
+      {
+        "id": "1ab48a7e-b9db-4793-9017-53e5aeb8582c",
+        "apartmentHash": null,
+        "issueId": "absence-bennes-compost",
+        "building": "24",
+        "createdAt": "2026-07-30T20:15:21.858Z"
+      },
+      {
+        "id": "1f6a4b44-e1fe-49ac-8b74-b7119c9d487e",
+        "apartmentHash": null,
+        "issueId": "serrures-caves-difficiles",
+        "building": "28",
+        "createdAt": "2026-07-30T19:22:50.090Z"
+      },
+      {
+        "id": "21e8370c-e55f-4f8f-a772-6313c5cbc879",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:51:46.461Z",
+        "building": "15",
+        "issueId": "serrures-caves-difficiles"
+      },
+      {
+        "id": "246a7b3b-9dd0-40df-af67-ed2f6c909fb4",
+        "issueId": "eau-chaude-coupure-soir",
+        "apartmentHash": null,
+        "building": "20",
+        "createdAt": "2026-07-30T21:43:02.989Z"
+      },
+      {
+        "id": "24e4e11b-a53d-42c2-85b2-d9ef731b50d3",
+        "createdAt": "2026-07-30T19:27:48.382Z",
+        "building": "24",
+        "apartmentHash": null,
+        "issueId": "vmc-pannes"
+      },
+      {
+        "id": "2526634b-a381-4c25-8e09-6a3810a89697",
+        "building": "28",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:41:04.409Z",
+        "issueId": "souris-rats-parties-communes"
+      },
+      {
+        "id": "262b20ae-213c-4800-8e0c-747f83142a82",
+        "apartmentHash": null,
+        "issueId": "plans-travail-cuisine-taches",
+        "building": "20",
+        "createdAt": "2026-07-30T21:33:38.980Z"
+      },
+      {
+        "id": "29528e2d-5a0b-403f-a107-5bf866edf7da",
+        "createdAt": "2026-07-30T20:01:12.746Z",
+        "issueId": "acces-principal-pmr-poussettes",
+        "building": "24",
+        "apartmentHash": null
+      },
+      {
+        "id": "2a388080-cb5e-4f13-9ece-ae4f241b31f9",
+        "building": "28",
+        "apartmentHash": null,
+        "issueId": "chauffage-sol-anormal",
+        "createdAt": "2026-07-30T19:57:06.849Z"
+      },
+      {
+        "id": "2ceb4fcb-3ca9-434c-80d9-dfb64fd1238f",
+        "issueId": "finitions-appartements-sans-suivi",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:49:30.779Z",
+        "building": "28"
+      },
+      {
+        "id": "2d2b7681-ad75-49ad-a4ab-9d387c5e9593",
+        "issueId": "finitions-appartements-sans-suivi",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:29:50.361Z",
+        "building": "15"
+      },
+      {
+        "id": "2d6ce3f8-b79f-4698-93a2-44d00ab42443",
+        "createdAt": "2026-07-30T20:16:59.865Z",
+        "building": "24",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null
+      },
+      {
+        "id": "2fde9965-6b28-4ae6-9a46-dca29c2fdec6",
+        "issueId": "serrures-caves-difficiles",
+        "building": "24",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:59:38.697Z"
+      },
+      {
+        "id": "322e87bca9a0f646c74e83eb32f281c11dec6d27fbf3f319e4f2e2d52ae1f28f",
+        "createdAt": "2026-07-30T19:59:37.019Z",
+        "apartmentHash": "322e87bca9a0f646c74e83eb32f281c11dec6d27fbf3f319e4f2e2d52ae1f28f",
+        "issueId": "parking-entrees-inacheves",
+        "building": "17"
+      },
+      {
+        "id": "3554a6a8-42c0-476b-a518-8ded1d31b754",
+        "issueId": "stores-manquants",
+        "createdAt": "2026-07-30T19:23:42.259Z",
+        "apartmentHash": null,
+        "building": "28"
+      },
+      {
+        "id": "387e71419cc6b071050b8ae407ac0a6f07c091a933a3fc44deb58b18db345bca",
+        "apartmentHash": "387e71419cc6b071050b8ae407ac0a6f07c091a933a3fc44deb58b18db345bca",
+        "building": "15",
+        "createdAt": "2026-07-30T20:08:21.599Z",
+        "issueId": "plans-travail-cuisine-taches"
+      },
+      {
+        "id": "393f2588-7a5b-4409-b17a-09673443fea1",
+        "issueId": "nuisances-nocturnes-parking",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:39:18.519Z",
+        "building": "28"
+      },
+      {
+        "id": "3ea2cf4bfae9d3f5e8a5281045b7c8b0275dfd155fb17ce02ea1fe3b8683ce9e",
+        "apartmentHash": "3ea2cf4bfae9d3f5e8a5281045b7c8b0275dfd155fb17ce02ea1fe3b8683ce9e",
+        "building": "24",
+        "createdAt": "2026-07-30T19:25:12.939Z",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "40f8b2af-99d6-445b-91bb-37e3cd6e44aa",
+        "issueId": "plans-travail-cuisine-taches",
+        "createdAt": "2026-07-30T20:10:16.952Z",
+        "apartmentHash": null,
+        "building": "24"
+      },
+      {
+        "id": "42858310-bf53-45e6-922d-16b4d1f1bab0",
+        "apartmentHash": null,
+        "issueId": "stores-manquants",
+        "createdAt": "2026-07-30T19:30:13.386Z",
+        "building": "15"
+      },
+      {
+        "id": "43f5756f-fe62-48be-8308-5bcb436172dc",
+        "issueId": "balcons-dangereux",
+        "apartmentHash": null,
+        "building": "24",
+        "createdAt": "2026-07-30T20:12:12.750Z"
+      },
+      {
+        "id": "44e353cc-253e-4ff3-b9e4-584a730c5926",
+        "createdAt": "2026-07-30T20:43:02.153Z",
+        "apartmentHash": null,
+        "building": "19",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "46552527-e7cc-48ad-a975-0d99b15c522a",
+        "building": "17",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:13:43.459Z",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "489b0d7d-66d6-40d4-ae65-59268c4cb835",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null,
+        "building": "19",
+        "createdAt": "2026-07-30T19:30:13.983Z"
+      },
+      {
+        "id": "4abe6d28-4970-4b70-8cff-8f3de578956d",
+        "building": "19",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:30:45.345Z",
+        "issueId": "finitions-appartements-sans-suivi"
+      },
+      {
+        "id": "4b4ec496d02f573539679dffc06dd9df577b5553ea508223e326bcd9851c5da4",
+        "apartmentHash": "4b4ec496d02f573539679dffc06dd9df577b5553ea508223e326bcd9851c5da4",
+        "building": "17",
+        "issueId": "chauffage-sol-anormal",
+        "createdAt": "2026-07-30T19:22:32.685Z"
+      },
+      {
+        "id": "4d19b7113f2151d3249c5ce7576ba6cd18b17e55d8228f1a67908ab0d90212ad",
+        "issueId": "souris-rats-parties-communes",
+        "createdAt": "2026-07-30T19:22:16.906Z",
+        "building": "17",
+        "apartmentHash": "4d19b7113f2151d3249c5ce7576ba6cd18b17e55d8228f1a67908ab0d90212ad"
+      },
+      {
+        "id": "4d3bbcf9-d78f-4891-a0fa-64f9d6e45008",
+        "building": "24",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:02:46.652Z",
+        "issueId": "nuisances-nocturnes-parking"
+      },
+      {
+        "id": "4dec6df3-9978-4a7c-857d-4efbc14bfd25",
+        "createdAt": "2026-07-30T19:26:39.449Z",
+        "issueId": "vmc-pannes",
+        "apartmentHash": null,
+        "building": "24"
+      },
+      {
+        "id": "54b24da3-e530-44fd-8e6f-aba8692a912a",
+        "apartmentHash": null,
+        "issueId": "vmc-pannes",
+        "building": "24",
+        "createdAt": "2026-07-30T19:59:16.943Z"
+      },
+      {
+        "id": "555491c6-b75c-4057-bc1d-77fffe22701a",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:28:25.237Z",
+        "issueId": "absence-bennes-compost",
+        "building": "24"
+      },
+      {
+        "id": "567d75d0f512d42833472c3ab67fd81d7b443596e5a6882a4649e61e57286d76",
+        "issueId": "absence-bennes-compost",
+        "createdAt": "2026-07-30T19:58:34.497Z",
+        "apartmentHash": "567d75d0f512d42833472c3ab67fd81d7b443596e5a6882a4649e61e57286d76",
+        "building": "17"
+      },
+      {
+        "id": "58a7c926-09db-4137-905c-c347a0565cb4",
+        "createdAt": "2026-07-30T20:12:10.449Z",
+        "apartmentHash": null,
+        "issueId": "finitions-appartements-sans-suivi",
+        "building": "28"
+      },
+      {
+        "id": "5ff4c919-ce8e-4cbe-b8c7-12e83dfcb4d3",
+        "issueId": "finitions-appartements-sans-suivi",
+        "createdAt": "2026-07-30T20:41:19.318Z",
+        "building": "28",
+        "apartmentHash": null
+      },
+      {
+        "id": "626b00ce-e528-48e6-89ce-dc0143475b7e",
+        "building": "24",
+        "issueId": "nuisances-nocturnes-parking",
+        "createdAt": "2026-07-30T20:09:44.282Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "67e8c01d-28a1-4ce0-b9dc-373a6b82bfd1",
+        "apartmentHash": null,
+        "building": "26",
+        "issueId": "plans-travail-cuisine-taches",
+        "createdAt": "2026-07-30T19:59:24.703Z"
+      },
+      {
+        "id": "687df06c-674e-40b3-b667-866b1005d6b2",
+        "issueId": "absence-bennes-compost",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:56:35.937Z",
+        "building": "28"
+      },
+      {
+        "id": "695f3af1-8f4b-40c7-a2a2-65e8e295c103",
+        "apartmentHash": null,
+        "building": "24",
+        "issueId": "nuisances-nocturnes-parking",
+        "createdAt": "2026-07-30T19:26:52.504Z"
+      },
+      {
+        "id": "6c96f09e-38df-43a2-b833-861e2ca47f8d",
+        "building": "24",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:29:32.058Z",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "6cb49002-b239-4d04-af3d-695bdff1d26d",
+        "createdAt": "2026-07-30T21:33:59.498Z",
+        "building": "20",
+        "apartmentHash": null,
+        "issueId": "serrures-caves-difficiles"
+      },
+      {
+        "id": "6e4f76f3-9ac3-4bfc-81b7-237e136774be",
+        "building": "28",
+        "issueId": "bornes-recharge-absentes",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:41:36.460Z"
+      },
+      {
+        "id": "6fbb4b86-16c2-46e4-9543-8be2bf74392f",
+        "createdAt": "2026-07-30T20:11:21.395Z",
+        "building": "24",
+        "issueId": "acces-principal-pmr-poussettes",
+        "apartmentHash": null
+      },
+      {
+        "id": "71b5f2b0cfad1e7524f0353ef6335f40c9b70e7355bf7a51776cd39df0f0549d",
+        "apartmentHash": "71b5f2b0cfad1e7524f0353ef6335f40c9b70e7355bf7a51776cd39df0f0549d",
+        "issueId": "parking-entrees-inacheves",
+        "createdAt": "2026-07-30T19:31:50.005Z",
+        "building": "20"
+      },
+      {
+        "id": "72e5f39d62c0ea1d1ffec8f75687adf35ef66206098edd94e50c0a8d0630fdb7",
+        "building": "15",
+        "createdAt": "2026-07-30T19:46:47.102Z",
+        "apartmentHash": "72e5f39d62c0ea1d1ffec8f75687adf35ef66206098edd94e50c0a8d0630fdb7",
+        "issueId": "souris-rats-parties-communes"
+      },
+      {
+        "id": "7317c48e-0b63-4a57-9605-b86c70288d20",
+        "issueId": "parking-entrees-inacheves",
+        "createdAt": "2026-07-30T19:58:15.080Z",
+        "apartmentHash": null,
+        "building": "28"
+      },
+      {
+        "id": "755d9c46-12c4-49dd-9234-60ab18da88ab",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:09:24.613Z",
+        "building": "24",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "756a56bf-a6fe-4130-acfb-0c8d4486fa63",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:06:30.545Z",
+        "building": "26",
+        "issueId": "eau-chaude-coupure-soir"
+      },
+      {
+        "id": "7686f41b-ac84-4fd2-a268-e0ebf85f490d",
+        "apartmentHash": null,
+        "building": "24",
+        "createdAt": "2026-07-30T19:29:16.792Z",
+        "issueId": "nuisances-nocturnes-parking"
+      },
+      {
+        "id": "77de7396-3dc9-49e7-af15-b13be43414f1",
+        "issueId": "vmc-pannes",
+        "createdAt": "2026-07-30T20:48:00.437Z",
+        "building": "28",
+        "apartmentHash": null
+      },
+      {
+        "id": "77f7ea12-931e-4c22-8385-b30cbc07b15d",
+        "apartmentHash": null,
+        "issueId": "debris-metalliques-parking",
+        "createdAt": "2026-07-30T20:04:52.811Z",
+        "building": "26"
+      },
+      {
+        "id": "78d3824c-9184-458e-b81a-334768cc43bf",
+        "createdAt": "2026-07-30T20:17:32.175Z",
+        "apartmentHash": null,
+        "issueId": "parking-entrees-inacheves",
+        "building": "24"
+      },
+      {
+        "id": "7a7dce23-2016-4215-bbad-b724bf213f30",
+        "createdAt": "2026-07-30T20:11:48.433Z",
+        "issueId": "debris-metalliques-parking",
+        "apartmentHash": null,
+        "building": "24"
+      },
+      {
+        "id": "7ce38ebc-92f4-44cf-be4f-a2a3bf0fbf31",
+        "issueId": "finitions-appartements-sans-suivi",
+        "building": "24",
+        "createdAt": "2026-07-30T20:15:46.643Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "7d3f8dc46c936016e9aed310df086fed00b56545290c921ccda3a931a245a3a4",
+        "apartmentHash": "7d3f8dc46c936016e9aed310df086fed00b56545290c921ccda3a931a245a3a4",
+        "createdAt": "2026-07-30T19:30:57.662Z",
+        "building": "20",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "805f5e0ef2738eb40e34bad7191ef7c41342fa46e367c019b34e249ecc4cbeca",
+        "createdAt": "2026-07-30T19:58:58.216Z",
+        "building": "17",
+        "apartmentHash": "805f5e0ef2738eb40e34bad7191ef7c41342fa46e367c019b34e249ecc4cbeca",
+        "issueId": "chauffage-sol-anormal"
+      },
+      {
+        "id": "80b3cf90-5e00-48d9-a688-8ed58dda5757",
+        "apartmentHash": null,
+        "issueId": "vmc-pannes",
+        "building": "24",
+        "createdAt": "2026-07-30T19:28:56.047Z"
+      },
+      {
+        "id": "821ded3432a640e74178374432f0b5092a7c4b783cf26c776231d134e62f8eff",
+        "apartmentHash": "821ded3432a640e74178374432f0b5092a7c4b783cf26c776231d134e62f8eff",
+        "building": "24",
+        "issueId": "vmc-pannes",
+        "createdAt": "2026-07-30T19:22:53.993Z"
+      },
+      {
+        "id": "823b0d03-e610-4de9-af8c-28d79e9dabe2",
+        "issueId": "vmc-pannes",
+        "createdAt": "2026-07-30T19:21:47.001Z",
+        "building": "26",
+        "apartmentHash": null
+      },
+      {
+        "id": "87531a684cbf0ba0e7d389ea0cc777361732e9df1a2d1cad56a452a7115be790",
+        "issueId": "souris-rats-parties-communes",
+        "building": "24",
+        "apartmentHash": "87531a684cbf0ba0e7d389ea0cc777361732e9df1a2d1cad56a452a7115be790",
+        "createdAt": "2026-07-30T19:24:51.023Z"
+      },
+      {
+        "id": "89dcdbb65feda208a180fc2a9e8f702fb12310c69e95721ff53b615afd7a20ee",
+        "apartmentHash": "89dcdbb65feda208a180fc2a9e8f702fb12310c69e95721ff53b615afd7a20ee",
+        "issueId": "vmc-pannes",
+        "building": "20",
+        "createdAt": "2026-07-30T19:30:41.117Z"
+      },
+      {
+        "id": "8a08cd37-ed57-49bd-855e-6b36532a43ae",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:29:32.541Z",
+        "issueId": "souris-rats-parties-communes",
+        "building": "15"
+      },
+      {
+        "id": "8b1fb847-957a-4260-8dd9-387ed23f04e8",
+        "apartmentHash": null,
+        "building": "19",
+        "createdAt": "2026-07-30T21:26:47.438Z",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "8b3b0528-b99f-4a30-ba75-725fc2daf7bd",
+        "createdAt": "2026-07-30T20:12:30.430Z",
+        "apartmentHash": null,
+        "building": "28",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "8d9812c9-8322-4a02-8fb9-a4067d01d148",
+        "createdAt": "2026-07-30T20:52:05.426Z",
+        "issueId": "nuisances-nocturnes-parking",
+        "apartmentHash": null,
+        "building": "24"
+      },
+      {
+        "id": "8db724cf-2fda-4b3e-a983-7bdf6ada7f5e",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null,
+        "building": "24",
+        "createdAt": "2026-07-30T19:27:59.082Z"
+      },
+      {
+        "id": "8f44cf99-e8da-49c9-afc9-b61df815b700",
+        "createdAt": "2026-07-30T20:40:33.177Z",
+        "issueId": "vmc-pannes",
+        "building": "28",
+        "apartmentHash": null
+      },
+      {
+        "id": "8f62d19e-52d3-45e0-aa79-14979799022a",
+        "createdAt": "2026-07-30T19:26:49.000Z",
+        "building": "20",
+        "apartmentHash": null,
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "92134d17-94fb-43ae-9fd9-cf22a56e703d",
+        "issueId": "absence-bennes-compost",
+        "building": "28",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:40:51.210Z"
+      },
+      {
+        "id": "94b99efd-6247-44f0-bddc-9bfcac2925d2",
+        "issueId": "balcons-dangereux",
+        "createdAt": "2026-07-30T20:10:41.251Z",
+        "apartmentHash": null,
+        "building": "28"
+      },
+      {
+        "id": "951f5891-888b-4545-9ff3-1b8ede0b5d40",
+        "createdAt": "2026-07-30T20:51:29.045Z",
+        "issueId": "vmc-pannes",
+        "apartmentHash": null,
+        "building": "15"
+      },
+      {
+        "id": "95ec5994-2c41-4b25-a3dc-a2910665196b",
+        "createdAt": "2026-07-30T19:30:00.976Z",
+        "building": "26",
+        "issueId": "vmc-pannes",
+        "apartmentHash": null
+      },
+      {
+        "id": "964432fb-f4b9-4b0c-bb3b-e042d9c18183",
+        "createdAt": "2026-07-30T20:15:03.332Z",
+        "building": "24",
+        "issueId": "eau-chaude-coupure-soir",
+        "apartmentHash": null
+      },
+      {
+        "id": "977113d1-60ea-4bba-8e6f-7e77969cf48e",
+        "apartmentHash": null,
+        "building": "28",
+        "issueId": "parking-entrees-inacheves",
+        "createdAt": "2026-07-30T20:10:15.436Z"
+      },
+      {
+        "id": "99a5d09f-1f8f-45b0-8241-4e58dd12dd54",
+        "issueId": "nuisances-nocturnes-parking",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T21:27:47.455Z",
+        "building": "19"
+      },
+      {
+        "id": "99b5da3a928b19da6fd51d02cc430aa5000165bfd01773e01bd845f6718e2a25",
+        "issueId": "nuisances-nocturnes-parking",
+        "createdAt": "2026-07-30T18:51:14.404Z",
+        "apartmentHash": "99b5da3a928b19da6fd51d02cc430aa5000165bfd01773e01bd845f6718e2a25",
+        "building": "24"
+      },
+      {
+        "id": "9c80d0f8ef321188dec9ccc6eca4c02e6544cc5220a7162eac5a6549a2de9c24",
+        "apartmentHash": "9c80d0f8ef321188dec9ccc6eca4c02e6544cc5220a7162eac5a6549a2de9c24",
+        "issueId": "parking-entrees-inacheves",
+        "building": "17",
+        "createdAt": "2026-07-30T19:22:47.622Z"
+      },
+      {
+        "id": "9d61ec0d-a353-466f-80ab-4d31ca4ba5fa",
+        "building": "28",
+        "issueId": "finitions-appartements-sans-suivi",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:57:25.152Z"
+      },
+      {
+        "id": "9e86a816-e14f-46c3-b52f-2dfaa27a5fee",
+        "issueId": "stores-manquants",
+        "building": "28",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:47:35.244Z"
+      },
+      {
+        "id": "9ffe9ba0-9f20-4342-9d35-a1619331c570",
+        "createdAt": "2026-07-30T20:42:32.625Z",
+        "issueId": "bornes-recharge-absentes",
+        "apartmentHash": null,
+        "building": "15"
+      },
+      {
+        "id": "a11e9bbd-21b6-4a59-8558-e24580aeaade",
+        "issueId": "vmc-pannes",
+        "building": "28",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:22:13.870Z"
+      },
+      {
+        "id": "a1f391ff-73d7-431c-9337-3f1181019b04",
+        "building": "24",
+        "createdAt": "2026-07-30T19:27:08.449Z",
+        "apartmentHash": null,
+        "issueId": "fuites-caves-24-26"
+      },
+      {
+        "id": "a246c806-20cc-4e25-be1b-c78a737bd723",
+        "apartmentHash": null,
+        "building": "20",
+        "issueId": "souris-rats-parties-communes",
+        "createdAt": "2026-07-30T19:22:31.497Z"
+      },
+      {
+        "id": "a5de2d1a-29f0-415c-a78d-07861efb22d5",
+        "building": "28",
+        "issueId": "vmc-pannes",
+        "createdAt": "2026-07-30T19:22:27.346Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "a954b4e8-7e38-4cae-82a5-b0bfb88101da",
+        "issueId": "souris-rats-parties-communes",
+        "building": "24",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:28:34.486Z"
+      },
+      {
+        "id": "a9f5e7e5-8db3-408d-8b63-3be1ebb3326c",
+        "issueId": "absence-bennes-compost",
+        "building": "20",
+        "createdAt": "2026-07-30T21:34:25.027Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "ab17053c067a125b30e5e34fdd4a41342e53008e89337900ee737c5108d44461",
+        "createdAt": "2026-07-30T20:07:37.732Z",
+        "issueId": "eau-chaude-coupure-soir",
+        "apartmentHash": "ab17053c067a125b30e5e34fdd4a41342e53008e89337900ee737c5108d44461",
+        "building": "15"
+      },
+      {
+        "id": "abab80ac-1476-4e47-af30-9ca5e88a2ab8",
+        "issueId": "absence-bennes-compost",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:39:38.297Z",
+        "building": "20"
+      },
+      {
+        "id": "ad540071-5b52-49a1-a864-aa290d042b12",
+        "issueId": "nuisances-nocturnes-parking",
+        "building": "20",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T21:34:14.105Z"
+      },
+      {
+        "id": "b0753844a8740dd8b737011ed9d16ab507aaf7def151846cfc8866de3cd9b215",
+        "apartmentHash": "b0753844a8740dd8b737011ed9d16ab507aaf7def151846cfc8866de3cd9b215",
+        "building": "15",
+        "issueId": "vmc-pannes",
+        "createdAt": "2026-07-30T20:06:32.384Z"
+      },
+      {
+        "id": "b1ef68bd-7bc0-44ce-a6e1-7939172e2c81",
+        "building": "20",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:26:30.115Z",
+        "issueId": "nuisances-nocturnes-parking"
+      },
+      {
+        "id": "b2c3512e-918b-4507-b75c-bc40a7813d0f",
+        "issueId": "vmc-pannes",
+        "building": "28",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:41:12.851Z"
+      },
+      {
+        "id": "b2e79af0-f2f4-44e8-ab5a-c57f3e6cb4bb",
+        "createdAt": "2026-07-30T20:05:33.016Z",
+        "building": "19",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null
+      },
+      {
+        "id": "b3e4ab75-c3fb-4d72-bc8f-771e8ad25534",
+        "createdAt": "2026-07-30T19:30:31.675Z",
+        "building": "19",
+        "issueId": "absence-bennes-compost",
+        "apartmentHash": null
+      },
+      {
+        "id": "b5ed58af-ac0a-4a54-b3c9-d14f149ab952",
+        "createdAt": "2026-07-30T20:52:30.078Z",
+        "issueId": "vmc-pannes",
+        "building": "24",
+        "apartmentHash": null
+      },
+      {
+        "id": "b61f587e-2199-4aed-8524-5ea224059f48",
+        "apartmentHash": null,
+        "building": "24",
+        "createdAt": "2026-07-30T20:16:50.932Z",
+        "issueId": "vmc-pannes"
+      },
+      {
+        "id": "b9287e3f-9e9d-483a-8c9a-14bd72d51b95",
+        "issueId": "absence-bennes-compost",
+        "building": "15",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:28:58.822Z"
+      },
+      {
+        "id": "b92efbd8-7655-4f45-988a-5488cc1ead2b",
+        "apartmentHash": null,
+        "building": "26",
+        "issueId": "eau-chaude-coupure-soir",
+        "createdAt": "2026-07-30T19:59:40.080Z"
+      },
+      {
+        "id": "ba16a666cf5e775d036e73c66b6b87571629c1aa0530ec3dbafa440293d9643f",
+        "building": "24",
+        "issueId": "finitions-appartements-sans-suivi",
+        "apartmentHash": "ba16a666cf5e775d036e73c66b6b87571629c1aa0530ec3dbafa440293d9643f",
+        "createdAt": "2026-07-30T19:23:26.681Z"
+      },
+      {
+        "id": "bb044e5c-58ad-4c25-9925-a61deb14b9b3",
+        "apartmentHash": null,
+        "building": "28",
+        "createdAt": "2026-07-30T20:43:38.544Z",
+        "issueId": "parking-entrees-inacheves"
+      },
+      {
+        "id": "bb13769b-e831-47c1-861b-6d8a66972289",
+        "building": "24",
+        "issueId": "serrures-caves-difficiles",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:41:23.048Z"
+      },
+      {
+        "id": "bb2b3d00-b7f5-4e4d-b275-2305b3d97cf1",
+        "apartmentHash": null,
+        "issueId": "nuisances-nocturnes-parking",
+        "createdAt": "2026-07-30T21:20:59.787Z",
+        "building": "26"
+      },
+      {
+        "id": "bb9743eb-6d37-478b-8468-ebd022e41547",
+        "apartmentHash": null,
+        "building": "15",
+        "issueId": "parking-entrees-inacheves",
+        "createdAt": "2026-07-30T19:30:26.605Z"
+      },
+      {
+        "id": "c0e797ff-6c95-49cb-a1fa-5139d99ed599",
+        "issueId": "bornes-recharge-absentes",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:28:59.627Z",
+        "building": "20"
+      },
+      {
+        "id": "c7164f95-5cce-4308-a29a-5d5026b617b2",
+        "issueId": "nuisances-nocturnes-parking",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T19:28:14.232Z",
+        "building": "24"
+      },
+      {
+        "id": "cc3892cf54ade27b91d6a715634a5c8159a4701f4b9c4db78ec993f1bea762d3",
+        "building": "15",
+        "createdAt": "2026-07-30T20:06:11.655Z",
+        "apartmentHash": "cc3892cf54ade27b91d6a715634a5c8159a4701f4b9c4db78ec993f1bea762d3",
+        "issueId": "finitions-appartements-sans-suivi"
+      },
+      {
+        "id": "cd185cbd-695d-4d83-8fab-916863cd823d",
+        "apartmentHash": null,
+        "building": "26",
+        "createdAt": "2026-07-30T19:22:10.999Z",
+        "issueId": "absence-bennes-compost"
+      },
+      {
+        "id": "d163bb6c-7c32-4897-a012-ba4de9846a25",
+        "createdAt": "2026-07-30T20:16:34.546Z",
+        "building": "24",
+        "issueId": "plans-travail-cuisine-taches",
+        "apartmentHash": null
+      },
+      {
+        "id": "d3e94b309561625883b83ca9873827dd05389bff5183c356e38a277c9d507f6d",
+        "issueId": "serrures-caves-difficiles",
+        "building": "24",
+        "apartmentHash": "d3e94b309561625883b83ca9873827dd05389bff5183c356e38a277c9d507f6d",
+        "createdAt": "2026-07-30T19:25:48.317Z"
+      },
+      {
+        "id": "d47a685b-0136-4925-8d30-cc0cf42f3f8b",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:10:57.944Z",
+        "building": "24",
+        "issueId": "finitions-appartements-sans-suivi"
+      },
+      {
+        "id": "d996e0e0-2d9a-490f-ad12-981a9a103173",
+        "issueId": "debris-metalliques-parking",
+        "createdAt": "2026-07-30T19:24:00.339Z",
+        "apartmentHash": null,
+        "building": "28"
+      },
+      {
+        "id": "dc32538c-ddc7-4f36-b0fc-dcf935d34080",
+        "issueId": "vmc-pannes",
+        "apartmentHash": null,
+        "building": "15",
+        "createdAt": "2026-07-30T19:29:14.286Z"
+      },
+      {
+        "id": "e04b7150d3a86bfea996a1d3e9a203acfa7260c489bf077a720accfa09db13c3",
+        "apartmentHash": "e04b7150d3a86bfea996a1d3e9a203acfa7260c489bf077a720accfa09db13c3",
+        "building": "24",
+        "createdAt": "2026-07-30T18:50:20.419Z",
+        "issueId": "vmc-pannes"
+      },
+      {
+        "id": "e1fc95a9-6e33-48cb-9f33-5371affae190",
+        "issueId": "finitions-appartements-sans-suivi",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:52:02.701Z",
+        "building": "15"
+      },
+      {
+        "id": "e2d8f018-7577-4165-a6b2-c9bb7abfc334",
+        "building": "26",
+        "issueId": "nuisances-nocturnes-parking",
+        "createdAt": "2026-07-30T19:57:20.958Z",
+        "apartmentHash": null
+      },
+      {
+        "id": "e2e75b91-2725-4ef8-8600-3cf50909ad2b",
+        "building": "24",
+        "createdAt": "2026-07-30T20:40:54.423Z",
+        "issueId": "nuisances-nocturnes-parking",
+        "apartmentHash": null
+      },
+      {
+        "id": "e55c84db-8b1c-49fb-bc56-b7d0c84ca152",
+        "issueId": "balcons-dangereux",
+        "createdAt": "2026-07-30T20:41:43.892Z",
+        "apartmentHash": null,
+        "building": "28"
+      },
+      {
+        "id": "e5d9837b-97ba-4055-b229-2d1b315afbe5",
+        "createdAt": "2026-07-30T20:10:35.887Z",
+        "building": "24",
+        "apartmentHash": null,
+        "issueId": "serrures-caves-difficiles"
+      },
+      {
+        "id": "e6f91c9f-3998-4ce4-b673-f65aaff430f0",
+        "apartmentHash": null,
+        "building": "28",
+        "createdAt": "2026-07-30T20:11:36.610Z",
+        "issueId": "acces-principal-pmr-poussettes"
+      },
+      {
+        "id": "eaa5ae1e-cfe0-40fa-af91-33177db60c0b",
+        "building": "20",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:03:09.491Z",
+        "issueId": "eau-chaude-coupure-soir"
+      },
+      {
+        "id": "ec20e8cb-f80e-426b-a84e-457124d74159",
+        "apartmentHash": null,
+        "issueId": "stores-manquants",
+        "building": "15",
+        "createdAt": "2026-07-30T20:52:13.472Z"
+      },
+      {
+        "id": "ecfc2a44-54f3-4075-a9a0-99ea5a19818e",
+        "building": "24",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T20:16:02.427Z",
+        "issueId": "fuites-caves-24-26"
+      },
+      {
+        "id": "f17cba00f96d0ad3aefa3dca23eb4fe35019f62f5fdb627856b8a2d79f942b47",
+        "issueId": "acces-principal-pmr-poussettes",
+        "building": "24",
+        "apartmentHash": "f17cba00f96d0ad3aefa3dca23eb4fe35019f62f5fdb627856b8a2d79f942b47",
+        "createdAt": "2026-07-30T19:24:08.295Z"
+      },
+      {
+        "id": "f23373d9-0d7e-4604-8f33-2692593997be",
+        "createdAt": "2026-07-30T19:58:10.982Z",
+        "issueId": "vmc-pannes",
+        "building": "26",
+        "apartmentHash": null
+      },
+      {
+        "id": "f31c2618-d70b-4800-adcf-04ce02ff9f14",
+        "building": "28",
+        "createdAt": "2026-07-30T19:56:00.205Z",
+        "apartmentHash": null,
+        "issueId": "vmc-pannes"
+      },
+      {
+        "id": "f376a9a7-3761-4605-97df-37ca9ee2cce7",
+        "issueId": "finitions-appartements-sans-suivi",
+        "createdAt": "2026-07-30T19:27:20.023Z",
+        "building": "20",
+        "apartmentHash": null
+      },
+      {
+        "id": "f3d198733ada313fc8d8b4d396110dfb4240fdf42cff6e9542be2830f6898507",
+        "building": "24",
+        "apartmentHash": "f3d198733ada313fc8d8b4d396110dfb4240fdf42cff6e9542be2830f6898507",
+        "createdAt": "2026-07-30T19:29:01.328Z",
+        "issueId": "nuisances-nocturnes-parking"
+      },
+      {
+        "id": "f437bb25-5543-47ec-9fca-adf091430028",
+        "apartmentHash": null,
+        "building": "19",
+        "createdAt": "2026-07-30T21:26:27.510Z",
+        "issueId": "eau-chaude-coupure-soir"
+      },
+      {
+        "id": "f61cac5ad9d8c83e4986b93335ecbbf220c786bd9648786735203d828f1e0ae8",
+        "createdAt": "2026-07-30T20:04:14.726Z",
+        "issueId": "nuisances-nocturnes-parking",
+        "building": "26",
+        "apartmentHash": "f61cac5ad9d8c83e4986b93335ecbbf220c786bd9648786735203d828f1e0ae8"
+      },
+      {
+        "id": "f9b43f6b570196257adadcac9332511ff21f5b0dd500756858424ac8135f2e55",
+        "apartmentHash": "f9b43f6b570196257adadcac9332511ff21f5b0dd500756858424ac8135f2e55",
+        "issueId": "bornes-recharge-absentes",
+        "building": "22",
+        "createdAt": "2026-07-30T19:58:55.649Z"
+      },
+      {
+        "id": "fa54e6ac-0a55-42fc-80b5-f8f6740bb40f",
+        "building": "19",
+        "apartmentHash": null,
+        "createdAt": "2026-07-30T21:27:07.766Z",
+        "issueId": "balcons-dangereux"
+      },
+      {
+        "id": "fe6ba03691df18e234cc49e8ebbcceba088fc02763f73db91682d4b091575826",
+        "building": "20",
+        "apartmentHash": "fe6ba03691df18e234cc49e8ebbcceba088fc02763f73db91682d4b091575826",
+        "issueId": "acces-principal-pmr-poussettes",
+        "createdAt": "2026-07-30T19:31:27.781Z"
+      }
+    ],
+    "residence_issue_statuses": []
+  }
+}

@@ -1,0 +1,37 @@
+.status {
+  align-items: center;
+  background: var(--surface-subtle);
+  border-radius: 999px;
+  color: #506056;
+  display: inline-flex;
+  font-size: 9px;
+  font-weight: 750;
+  gap: 6px;
+  letter-spacing: 0.04em;
+  padding: 5px 8px;
+  text-transform: uppercase;
+}
+
+.status i {
+  background: currentColor;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+}
+
+.active {
+  background: var(--soft-orange);
+  color: #a54d29;
+}
+
+.resolved {
+  background: #e4f4e8;
+  color: #26733f;
+}
+
+.interactive {
+  border: 0;
+  cursor: default;
+  touch-action: manipulation;
+  user-select: none;
+}

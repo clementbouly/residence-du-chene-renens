@@ -1,0 +1,51 @@
+// Extrait limité à la résidence. À fusionner dans le bloc
+// service cloud.firestore { match /databases/{database}/documents { ... } }
+// du projet Firebase de production.
+//
+// Ne pas remplacer le fichier complet : cette base est partagée avec le
+// portfolio et ses autres collections doivent conserver leurs propres règles.
+
+match /residence_issue_reports/{reportId} {
+  allow read: if true;
+  allow create: if
+    request.resource.data.keys().hasOnly([
+      'issueId',
+      'building',
+      'apartmentHash',
+      'createdAt'
+    ])
+    && request.resource.data.issueId is string
+    && request.resource.data.issueId.size() > 0
+    && request.resource.data.issueId.size() <= 80
+    && request.resource.data.building is string
+    && request.resource.data.building.size() > 0
+    && request.resource.data.building.size() <= 12
+    && (
+      request.resource.data.apartmentHash == null
+      || (
+        request.resource.data.apartmentHash is string
+        && request.resource.data.apartmentHash.size() == 64
+      )
+    )
+    && request.resource.data.createdAt == request.time;
+  allow update, delete: if false;
+}
+
+match /residence_issue_statuses/{issueId} {
+  allow read: if true;
+  allow create, update: if
+    request.resource.data.keys().hasOnly([
+      'issueId',
+      'status',
+      'updatedAt'
+    ])
+    && request.resource.data.issueId == issueId
+    && issueId.size() > 0
+    && issueId.size() <= 80
+    && (
+      request.resource.data.status == 'active'
+      || request.resource.data.status == 'resolved'
+    )
+    && request.resource.data.updatedAt == request.time;
+  allow delete: if false;
+}

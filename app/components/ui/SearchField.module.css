@@ -1,0 +1,70 @@
+.field {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgb(23 37 28 / 4%);
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+  width: 100%;
+}
+
+.field:focus-within {
+  border-color: #7f9e87;
+  box-shadow: 0 0 0 3px rgb(34 91 61 / 10%);
+}
+
+.field > svg {
+  color: var(--muted);
+  flex: 0 0 auto;
+  margin-right: 11px;
+}
+
+.field input {
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  font-size: 14px;
+  min-width: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.field input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.field input::placeholder {
+  color: var(--muted);
+}
+
+.clear {
+  align-items: center;
+  background: var(--surface-subtle);
+  border: 0;
+  border-radius: 50%;
+  color: #667169;
+  display: flex;
+  flex: 0 0 auto;
+  height: 28px;
+  justify-content: center;
+  margin-left: 8px;
+  transition:
+    background 140ms ease,
+    color 140ms ease,
+    transform 120ms ease;
+  width: 28px;
+}
+
+.clear:hover {
+  background: var(--soft-green);
+  color: var(--green);
+}
+
+.clear:active {
+  transform: scale(0.92);
+}

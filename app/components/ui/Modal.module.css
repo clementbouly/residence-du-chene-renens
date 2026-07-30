@@ -1,0 +1,63 @@
+.backdrop {
+  align-items: center;
+  background: rgb(13 27 18 / 68%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 18px;
+  position: fixed;
+  will-change: opacity;
+  z-index: 50;
+}
+
+.backdropElevated {
+  background: rgb(13 27 18 / 76%);
+  z-index: 90;
+}
+
+.panel {
+  max-height: calc(100vh - 36px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  position: relative;
+  transform-origin: center;
+  will-change: opacity, transform;
+  width: 100%;
+}
+
+.dragHandle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .sheetOnMobile {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .sheetOnMobile .panel {
+    max-height: 92vh;
+    transform-origin: bottom center;
+  }
+
+  .dragHandle {
+    align-items: center;
+    cursor: grab;
+    display: flex;
+    height: 22px;
+    justify-content: center;
+    margin: -13px -18px 3px;
+    touch-action: none;
+  }
+
+  .dragHandle:active {
+    cursor: grabbing;
+  }
+
+  .dragHandle span {
+    background: #b9c1b8;
+    border-radius: 999px;
+    height: 4px;
+    width: 42px;
+  }
+}

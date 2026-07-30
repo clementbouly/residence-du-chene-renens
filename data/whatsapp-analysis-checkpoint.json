@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversation": "Résidence du Chêne Renens",
+  "timezone": "Europe/Zurich",
+  "recordedAt": "2026-07-30T23:37:01+02:00",
+  "sourceArchive": {
+    "fileName": "Discussion WhatsApp avec Résidence du Chêne Renens(1).zip",
+    "lastMessageAt": "2026-07-30T22:41:00+02:00"
+  },
+  "analysisCheckpoint": {
+    "lastAnalyzedMessageAt": "2026-07-30T22:41:00+02:00",
+    "anchorText": "Possible 🤞🏼",
+    "source": "Nouvel export WhatsApp et médias omis fournis séparément, analysés le 30 juillet 2026"
+  },
+  "nextImport": {
+    "strategy": "find_anchor_then_analyze_after",
+    "fallbackOverlapMinutes": 5,
+    "instructions": [
+      "Chercher d'abord le message correspondant à anchorText dans le nouvel export.",
+      "Analyser uniquement les messages situés après ce message.",
+      "Si le message d'ancrage est absent, reprendre cinq minutes avant lastAnalyzedMessageAt puis dédupliquer les messages déjà traités.",
+      "Mettre à jour ce checkpoint seulement après la fin d'une nouvelle analyse."
+    ]
+  }
+}

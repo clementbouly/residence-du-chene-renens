@@ -1,0 +1,35 @@
+.dialog {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 24%);
+  max-width: 420px;
+  padding: 26px;
+}
+
+.dialog h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
+}
+
+.dialog p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dialog .error {
+  color: var(--danger, #a33232);
+  margin-top: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 9px;
+  justify-content: flex-end;
+  margin-top: 22px;
+}

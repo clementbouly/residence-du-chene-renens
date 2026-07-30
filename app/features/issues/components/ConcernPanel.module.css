@@ -1,0 +1,63 @@
+.transition {
+  position: relative;
+}
+
+.actions,
+.formActions {
+  display: flex;
+  gap: 9px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+.form {
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  display: grid;
+  gap: 13px;
+  padding: 15px;
+}
+
+.form label {
+  display: block;
+  font-size: 11px;
+  font-weight: 750;
+  margin-bottom: 6px;
+}
+
+.form label span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.form input {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  color: var(--ink);
+  padding: 11px 12px;
+  width: 100%;
+}
+
+.form > p {
+  color: var(--muted);
+  font-size: 10px;
+  margin: -2px 0 2px;
+}
+
+.formActions {
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .formActions button {
+    flex: 1;
+  }
+}

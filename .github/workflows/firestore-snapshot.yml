@@ -1,0 +1,39 @@
+name: Snapshot Firestore
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    name: Sauvegarder les données de la résidence
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v6
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Créer le snapshot
+        run: npm run db:snapshot
+
+      - name: Conserver le snapshot
+        uses: actions/upload-artifact@v6
+        with:
+          name: firestore-residence-${{ github.sha }}
+          path: data/firestore-snapshot.json
+          if-no-files-found: error
+          retention-days: 90
