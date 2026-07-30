@@ -18,8 +18,10 @@ import {
   getConcernStats,
   hashApartment,
   normalizeBuilding,
+  sortIssues,
   type ConcernReport,
   type Issue,
+  type IssueSort,
   type IssueStatus,
   type IssueStatusOverrides,
   type StatusFilter,
@@ -52,7 +54,8 @@ export function useIssueTracker() {
   const [selectedIssue, setSelectedIssue] = useState<Issue | null>(null);
   const [showConcernForm, setShowConcernForm] = useState(false);
   const [search, setSearch] = useState("");
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>("active");
+  const [issueSort, setIssueSort] = useState<IssueSort>("date-desc");
   const [reports, setReports] = useState<ConcernReport[]>([]);
   const [building, setBuilding] = useState("");
   const [apartment, setApartment] = useState("");
@@ -163,10 +166,15 @@ export function useIssueTracker() {
     [selectedIssue, statusOverrides],
   );
 
-  const visibleIssues = useMemo(
-    () => filterIssues(effectiveIssues, search, statusFilter),
-    [effectiveIssues, search, statusFilter],
-  );
+  const visibleIssues = useMemo(() => {
+    const filteredIssues = filterIssues(
+      effectiveIssues,
+      search,
+      statusFilter,
+    );
+
+    return sortIssues(filteredIssues, reports, issueSort);
+  }, [effectiveIssues, issueSort, reports, search, statusFilter]);
   const statusCounts = useMemo(
     () => countIssuesByStatus(effectiveIssues),
     [effectiveIssues],
@@ -336,6 +344,7 @@ export function useIssueTracker() {
     statusCounts,
     statusChangeTarget,
     statusFilter,
+    issueSort,
     statusUpdateError,
     visibleIssues,
     actions: {
@@ -351,6 +360,7 @@ export function useIssueTracker() {
       setSearch,
       setShowConcernForm,
       setStatusFilter,
+      setIssueSort,
       shareIssue,
       submitConcern,
     },

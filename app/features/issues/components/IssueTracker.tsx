@@ -30,9 +30,11 @@ export default function IssueTracker() {
             search={tracker.search}
             statusFilter={tracker.statusFilter}
             statusCounts={tracker.statusCounts}
+            issueSort={tracker.issueSort}
             onOpenIssue={actions.openIssue}
             onSearchChange={actions.setSearch}
             onStatusFilterChange={actions.setStatusFilter}
+            onSortChange={actions.setIssueSort}
           />
 
           <AnimatePresence>

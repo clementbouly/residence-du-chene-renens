@@ -30,17 +30,20 @@
   margin: 0;
 }
 
-.filters {
+.controls {
+  align-items: center;
   display: flex;
-  gap: 8px;
+  gap: 12px;
+  justify-content: space-between;
   margin: -2px 0 14px;
-  overflow-x: auto;
+  overflow: visible;
   padding: 2px;
-  scrollbar-width: none;
 }
 
-.filters::-webkit-scrollbar {
-  display: none;
+.filters {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
 }
 
 .filter {

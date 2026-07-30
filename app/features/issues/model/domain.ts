@@ -30,6 +30,11 @@ export type ConcernStats = {
 };
 
 export type StatusFilter = "all" | IssueStatus;
+export type IssueSort =
+  | "date-desc"
+  | "date-asc"
+  | "concerns-desc"
+  | "concerns-asc";
 export type IssueStatusOverrides = Record<string, IssueStatus>;
 
 export const isIssueStatus = (value: unknown): value is IssueStatus =>
@@ -41,7 +46,6 @@ export const statusLabels: Record<IssueStatus, string> = {
 };
 
 export const statusFilters: { label: string; value: StatusFilter }[] = [
-  { label: "Tous", value: "all" },
   { label: "En cours", value: "active" },
   { label: "Résolus", value: "resolved" },
 ];
@@ -84,6 +88,29 @@ export function countIssuesByStatus(issues: Issue[]) {
     active: issues.filter((issue) => issue.status === "active").length,
     resolved: issues.filter((issue) => issue.status === "resolved").length,
   };
+}
+
+export function sortIssues(
+  issues: Issue[],
+  reports: ConcernReport[],
+  sort: IssueSort,
+) {
+  return issues
+    .map((issue, originalIndex) => ({ issue, originalIndex }))
+    .sort((left, right) => {
+      const direction = sort.endsWith("desc") ? -1 : 1;
+      const difference = sort.startsWith("date")
+        ? left.issue.firstMentionedAt.localeCompare(
+            right.issue.firstMentionedAt,
+          )
+        : getConcernStats(left.issue, reports).total -
+          getConcernStats(right.issue, reports).total;
+
+      return difference === 0
+        ? left.originalIndex - right.originalIndex
+        : difference * direction;
+    })
+    .map(({ issue }) => issue);
 }
 
 export function getConcernStats(

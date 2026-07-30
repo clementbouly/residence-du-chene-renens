@@ -9,6 +9,7 @@ import {
   filterIssues,
   getConcernStats,
   hashApartment,
+  sortIssues,
   type ConcernReport,
 } from "../app/features/issues/model/domain";
 import { createLocalIssueReportStore } from "../app/features/issues/data/store.local";
@@ -46,6 +47,35 @@ test("les compteurs de statut couvrent tout le catalogue", () => {
 
   assert.equal(counts.active + counts.resolved, counts.all);
   assert.equal(counts.all, issues.length);
+});
+
+test("les problèmes peuvent être triés par date et foyers concernés", () => {
+  const hotWater = issues.find(
+    (issue) => issue.id === "eau-chaude-coupure-soir",
+  );
+  const caveAccess = issues.find(
+    (issue) => issue.id === "serrures-caves-difficiles",
+  );
+  assert.ok(hotWater);
+  assert.ok(caveAccess);
+
+  const reports: ConcernReport[] = [
+    { id: "a", issueId: caveAccess.id, building: "24" },
+    { id: "b", issueId: caveAccess.id, building: "26" },
+  ];
+
+  assert.deepEqual(
+    sortIssues([caveAccess, hotWater], reports, "date-desc").map(
+      (issue) => issue.id,
+    ),
+    [hotWater.id, caveAccess.id],
+  );
+  assert.deepEqual(
+    sortIssues([hotWater, caveAccess], reports, "concerns-desc").map(
+      (issue) => issue.id,
+    ),
+    [caveAccess.id, hotWater.id],
+  );
 });
 
 test("les identifiants et le hash fonctionnent sans contexte HTTPS", async () => {

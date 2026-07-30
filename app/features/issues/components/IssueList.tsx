@@ -9,8 +9,10 @@ import {
   statusFilters,
   type ConcernReport,
   type Issue,
+  type IssueSort,
   type StatusFilter,
 } from "../model/domain";
+import IssueSortMenu from "./IssueSortMenu";
 import IssueStatusBadge from "./IssueStatusBadge";
 import styles from "./IssueList.module.css";
 
@@ -20,9 +22,11 @@ type IssueListProps = {
   search: string;
   statusFilter: StatusFilter;
   statusCounts: Record<StatusFilter, number>;
+  issueSort: IssueSort;
   onOpenIssue: (issue: Issue) => void;
   onSearchChange: (value: string) => void;
   onStatusFilterChange: (filter: StatusFilter) => void;
+  onSortChange: (sort: IssueSort) => void;
 };
 
 export default function IssueList({
@@ -31,9 +35,11 @@ export default function IssueList({
   search,
   statusFilter,
   statusCounts,
+  issueSort,
   onOpenIssue,
   onSearchChange,
   onStatusFilterChange,
+  onSortChange,
 }: IssueListProps) {
   return (
     <section className={styles.tracker} aria-labelledby="issues-title">
@@ -51,30 +57,34 @@ export default function IssueList({
         <h1 id="issues-title">Problèmes signalés</h1>
       </div>
 
-      <div
-        className={styles.filters}
-        role="group"
-        aria-label="Filtrer les problèmes par état"
-      >
-        {statusFilters.map((filter) => (
-          <button
-            key={filter.value}
-            className={[
-              styles.filter,
-              filter.value === "active" ? styles.filterActive : "",
-              filter.value === "resolved" ? styles.filterResolved : "",
-              statusFilter === filter.value ? styles.filterSelected : "",
-            ]
-              .filter(Boolean)
-              .join(" ")}
-            type="button"
-            aria-pressed={statusFilter === filter.value}
-            onClick={() => onStatusFilterChange(filter.value)}
-          >
-            <span>{filter.label}</span>
-            <b>{statusCounts[filter.value]}</b>
-          </button>
-        ))}
+      <div className={styles.controls}>
+        <div
+          className={styles.filters}
+          role="group"
+          aria-label="Filtrer les problèmes par état"
+        >
+          {statusFilters.map((filter) => (
+            <button
+              key={filter.value}
+              className={[
+                styles.filter,
+                filter.value === "active" ? styles.filterActive : "",
+                filter.value === "resolved" ? styles.filterResolved : "",
+                statusFilter === filter.value ? styles.filterSelected : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
+              type="button"
+              aria-pressed={statusFilter === filter.value}
+              onClick={() => onStatusFilterChange(filter.value)}
+            >
+              <span>{filter.label}</span>
+              <b>{statusCounts[filter.value]}</b>
+            </button>
+          ))}
+        </div>
+
+        <IssueSortMenu value={issueSort} onChange={onSortChange} />
       </div>
 
       <div className={styles.list}>
