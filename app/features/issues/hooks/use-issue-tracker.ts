@@ -55,7 +55,7 @@ export function useIssueTracker() {
   const [showConcernForm, setShowConcernForm] = useState(false);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("active");
-  const [issueSort, setIssueSort] = useState<IssueSort>("date-desc");
+  const [issueSort, setIssueSort] = useState<IssueSort>("concerns-desc");
   const [reports, setReports] = useState<ConcernReport[]>([]);
   const [building, setBuilding] = useState("");
   const [apartment, setApartment] = useState("");
