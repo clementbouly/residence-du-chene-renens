@@ -110,7 +110,10 @@ export default function IssueList({
                 >
                   <span className={styles.content}>
                     <span className={styles.meta}>
-                      <IssueStatusBadge status={issue.status} />
+                      <IssueStatusBadge
+                        status={issue.status}
+                        showLabel={false}
+                      />
                       <span className={styles.category}>{issue.category}</span>
                     </span>
                     <strong>{issue.title}</strong>

@@ -12,6 +12,14 @@
     "anchorText": "Possible 🤞🏼",
     "source": "Nouvel export WhatsApp et médias omis fournis séparément, analysés le 30 juillet 2026"
   },
+  "manuallyAnalyzedMessages": [
+    {
+      "recordedAt": "2026-07-31",
+      "messageTimestamp": null,
+      "anchorText": "Je voulais savoir si certains d’entre vous ont remarqué l’apparition de fissures sur leurs murs.",
+      "resultingIssueId": "fissures-murs-progressives"
+    }
+  ],
   "nextImport": {
     "strategy": "find_anchor_then_analyze_after",
     "fallbackOverlapMinutes": 5,
@@ -19,6 +27,7 @@
       "Chercher d'abord le message correspondant à anchorText dans le nouvel export.",
       "Analyser uniquement les messages situés après ce message.",
       "Si le message d'ancrage est absent, reprendre cinq minutes avant lastAnalyzedMessageAt puis dédupliquer les messages déjà traités.",
+      "Dédupliquer également les messages listés dans manuallyAnalyzedMessages à partir de leur anchorText.",
       "Mettre à jour ce checkpoint seulement après la fin d'une nouvelle analyse."
     ]
   }

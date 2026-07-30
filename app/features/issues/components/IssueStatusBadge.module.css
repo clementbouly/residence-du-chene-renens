@@ -19,6 +19,16 @@
   width: 5px;
 }
 
+.compact {
+  gap: 0;
+  padding: 6px;
+}
+
+.compact i {
+  height: 6px;
+  width: 6px;
+}
+
 .active {
   background: var(--soft-orange);
   color: #a54d29;

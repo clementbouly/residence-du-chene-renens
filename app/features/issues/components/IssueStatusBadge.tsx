@@ -3,16 +3,19 @@ import styles from "./IssueStatusBadge.module.css";
 
 type IssueStatusBadgeProps = {
   onDoubleClick?: () => void;
+  showLabel?: boolean;
   status: IssueStatus;
 };
 
 export default function IssueStatusBadge({
   onDoubleClick,
+  showLabel = true,
   status,
 }: IssueStatusBadgeProps) {
   const className = [
     styles.status,
     styles[status],
+    !showLabel ? styles.compact : "",
     onDoubleClick ? styles.interactive : "",
   ]
     .filter(Boolean)
@@ -20,7 +23,7 @@ export default function IssueStatusBadge({
   const content = (
     <>
       <i aria-hidden="true" />
-      {statusLabels[status]}
+      {showLabel && statusLabels[status]}
     </>
   );
 
@@ -37,5 +40,12 @@ export default function IssueStatusBadge({
     );
   }
 
-  return <span className={className}>{content}</span>;
+  return (
+    <span
+      className={className}
+      aria-label={!showLabel ? statusLabels[status] : undefined}
+    >
+      {content}
+    </span>
+  );
 }

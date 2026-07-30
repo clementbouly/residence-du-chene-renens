@@ -8,6 +8,18 @@ export type {
 
 export const issues: Issue[] = [
   {
+    id: "fissures-murs-progressives",
+    title: "Fissures progressives sur certains murs",
+    summary:
+      "Des fissures semblent apparaître et s’agrandir progressivement dans au moins un logement.",
+    details:
+      "Une personne constate une évolution de semaine en semaine et cherche à savoir si d’autres appartements sont concernés. Le signalement ne précise pas encore les pièces touchées ni les bâtiments concernés.",
+    category: "Bâtiment",
+    status: "active",
+    firstMentionedAt: "2026-07-31",
+    knownConcerns: [{ building: null, count: 1 }],
+  },
+  {
     id: "plans-travail-cuisine-taches",
     title: "Plans de travail de cuisine qui se tachent facilement",
     summary:
