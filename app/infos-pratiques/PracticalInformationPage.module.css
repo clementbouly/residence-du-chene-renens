@@ -63,7 +63,8 @@
 }
 
 .privacyCard a,
-.resourceLink {
+.resourceLink,
+.copyButton {
   align-items: center;
   display: inline-flex;
   font-size: 12px;
@@ -145,6 +146,28 @@
 .resourceLink {
   color: var(--green);
   margin-top: 15px;
+}
+
+.copyButton {
+  background: transparent;
+  border: 0;
+  color: var(--green);
+  margin-top: 15px;
+  padding: 0;
+  text-align: left;
+}
+
+.copyButton:active {
+  transform: scale(0.98);
+}
+
+.copyStatus {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  margin-left: 3px;
+  text-transform: uppercase;
 }
 
 .card small {

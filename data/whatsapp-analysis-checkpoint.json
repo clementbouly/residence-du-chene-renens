@@ -8,16 +8,16 @@
     "lastMessageAt": "2026-07-30T22:41:00+02:00"
   },
   "analysisCheckpoint": {
-    "lastAnalyzedMessageAt": "2026-07-30T22:41:00+02:00",
-    "anchorText": "Possible 🤞🏼",
-    "source": "Nouvel export WhatsApp et médias omis fournis séparément, analysés le 30 juillet 2026"
+    "lastAnalyzedMessageAt": "2026-07-31T09:01:00+02:00",
+    "anchorText": "Selon la communication de la gérance et mes tests, le bouton étoile suffit.",
+    "source": "Messages incrémentaux copiés depuis WhatsApp et analysés le 31 juillet 2026"
   },
-  "manuallyAnalyzedMessages": [
+  "incrementalImports": [
     {
-      "recordedAt": "2026-07-31",
-      "messageTimestamp": null,
-      "anchorText": "Je voulais savoir si certains d’entre vous ont remarqué l’apparition de fissures sur leurs murs.",
-      "resultingIssueId": "fissures-murs-progressives"
+      "source": "Messages copiés dans la conversation Codex",
+      "firstMessageAt": "2026-07-30T22:39:00+02:00",
+      "lastMessageAt": "2026-07-31T09:01:00+02:00",
+      "analyzedAt": "2026-07-31"
     }
   ],
   "nextImport": {
@@ -27,7 +27,6 @@
       "Chercher d'abord le message correspondant à anchorText dans le nouvel export.",
       "Analyser uniquement les messages situés après ce message.",
       "Si le message d'ancrage est absent, reprendre cinq minutes avant lastAnalyzedMessageAt puis dédupliquer les messages déjà traités.",
-      "Dédupliquer également les messages listés dans manuallyAnalyzedMessages à partir de leur anchorText.",
       "Mettre à jour ce checkpoint seulement après la fin d'une nouvelle analyse."
     ]
   }

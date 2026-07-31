@@ -91,7 +91,8 @@
   text-transform: uppercase;
 }
 
-.hours {
+.hours,
+.fallbackNote {
   color: var(--muted);
   display: block;
   font-size: 10px;

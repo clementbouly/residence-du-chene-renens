@@ -67,6 +67,24 @@ export default function ContactsPage() {
               </a>
               {emailAction("ioncristipalanita@gmail.com")}
             </div>
+
+            <h2>Numéros de remplacement</h2>
+            <div className={styles.actions}>
+              <a className={styles.action} href="tel:+41786314519">
+                <Phone aria-hidden="true" size={16} strokeWidth={2} />
+                <span>+41 78 631 45 19</span>
+                <small>Appeler</small>
+              </a>
+              <a className={styles.action} href="tel:+41764517372">
+                <Phone aria-hidden="true" size={16} strokeWidth={2} />
+                <span>+41 76 451 73 72</span>
+                <small>Appeler</small>
+              </a>
+            </div>
+            <small className={styles.fallbackNote}>
+              Numéros de conciergerie partagés par un voisin, à essayer si les
+              contacts principaux ne répondent pas.
+            </small>
           </article>
 
           <article className={`${styles.card} ${styles.emergency}`}>

@@ -8,6 +8,18 @@ export type {
 
 export const issues: Issue[] = [
   {
+    id: "interphones-entrees-defaillants",
+    title: "Interphones défaillants dans plusieurs entrées",
+    summary:
+      "Des habitants n’entendent pas les appels ou ne peuvent pas ouvrir la porte depuis leur logement.",
+    details:
+      "Le problème est signalé aux entrées 19, 26 et 28. Dans certains logements, la sonnerie ne produit aucun son malgré le nom affiché ; dans d’autres, la commande d’ouverture ne fonctionne pas. Un électricien a indiqué que le mécanisme d’ouverture de l’entrée 28 n’était pas encore opérationnel.",
+    category: "Accès",
+    status: "active",
+    firstMentionedAt: "2026-07-31",
+    knownConcerns: [{ building: "19", count: 1 }],
+  },
+  {
     id: "fissures-murs-progressives",
     title: "Fissures progressives sur certains murs",
     summary:
@@ -33,11 +45,11 @@ export const issues: Issue[] = [
   },
   {
     id: "eau-chaude-coupure-soir",
-    title: "Plus d’eau chaude après 21h30",
+    title: "Coupures récurrentes d’eau chaude",
     summary:
-      "L’eau chaude devient indisponible en fin de soirée dans certains logements.",
+      "L’eau chaude devient indisponible à différents moments dans certains logements.",
     details:
-      "Le phénomène est constaté après 21h30 environ. L’origine de la coupure reste à déterminer et le sujet doit être remonté à la gérance.",
+      "Des coupures ont été constatées en fin de soirée ainsi que le matin du 31 juillet, notamment au bâtiment 20. Plusieurs habitants ont ouvert ou prévoient d’ouvrir un ticket. À 9h01, le concierge indiquait qu’une intervention était en cours pour le bâtiment 20 uniquement, sans information sur les autres bâtiments ni confirmation durable de résolution.",
     category: "Eau",
     status: "active",
     firstMentionedAt: "2026-07-30",
